@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/js/all.js">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#"><img class="logo" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg" alt=""></a></li>
+                <li>
+                    <a href="#" class="dropdown-menu">Movies</a>
+                    <ul class="movies">
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Now playing</a></li>
+                        <li><a href="#">Upcoming</a></li>
+                        <li><a href="#">Top Rated</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-menu">Shows</a>
+                    <ul class="movies">
+                        <li><a href="#">Popular</a></li>
+                        <li><a href="#">Airing Today</a></li>
+                        <li><a href="#">On TV</a></li>
+                        <li><a href="#">Top Rated</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-menu">People</a>
+                    <ul class="movies people">
+                        <li><a href="#">Popular People</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-menu">More</a>
+                    <ul class="movies">
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Leaderboard</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">API</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class=" menu menu2">
+                <li><a href="#"><i class="fa-solid fa-square-plus"></i></a></li>
+                <li><a href="#"><span class="lang-btn">EN</span></a></li>
+                <li><a href="#"><i class="fa-solid fa-bell"></i><sup>1</sup></a></li>
+                <li><a href="#"><img class="profile" src="../Animation/assets/img/765778865657.jpg" alt=""></a></li>
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            </ul>
+        </nav>
+        <div>
+            <div class="box1">
+                <h1>Welcome.</h1>
+                <h2>Millions of movies, TV shows and people to discover. Explore now.</h2>
+                <input type="text" class="inp" placeholder="Search for a movie, tv shows, person..." name="" id="">
+                <button class="search-btn">Search</button>
+            </div>
+            <div class="box2">
+                <h1 class="wrap">THAT'S A <br>
+                    WRAP 2022</h1>
+    
+
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="trends">
+            <div>
+                <h2 class="trending">Trending</h2>
+            </div>
+            <div class="trend">
+                <div class="today" onclick="today()">Today</div>
+                <div class="week" onclick="week()">This Week</div>
+            </div>
+            <div class="slide" id="slide"></div>
+
+        </div>
+        <div class="movies-list" id="movie-list">
+
+        </div>
+    </section>
+    <section class="section">
+        <div class="populars">
+            <div>
+                <h2 class="popular">Latest Trailers</h2>
+            </div>
+            <div class="trend">
+                <div class="tv" onclick="tv2()">On TV</div>
+                <div class="theatres" onclick="theatres2()">In Theatres</div>
+            </div>
+            <div class="slide" id="slideee"></div>
+        </div>
+        <div class="trailer-list" id="trailer-list">
+                
+        </div>
+    </section>
+    <section class="section1">
+        <div class="popularss">
+            <div>
+                <h2 class="popular">What's Popular</h2>
+            </div>
+            <div class="trend">
+                <div class="tv" onclick="tv()">On TV</div>
+                <div class="theatres" onclick="theatres()">In Theatres</div>
+            </div>
+            <div class="slide" id="slidee"></div>
+
+        </div>
+        <div class="movies-list" id="tv-list">
+
+        </div>
+    </section>
+    <section class="section2">
+        <div class="leader">
+            <h1 class="leaderboard">Leaderboard</h1>
+            <div class="edits">
+                <div>
+                    <span class="dot dot1"></span>
+                    <p class="all_time">All Time Edits</p>
+                </div>
+                <div>
+                    <span class="dot dot2"></span>
+                    <p class="this_week">Edits This Week</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="foot">
+        <div class="foot-container">
+            <div class="account">
+                <img src="logo2.svg" class="logo2" alt="">
+                <a href="#" class="mail">Hi fabduvasiyev@gmail.com!</a>
+            </div>
+            <div class="partt">
+                <div class="part">
+                    <p class="head">THE BASICS</p>
+                    <p>About TMDB</p>
+                    <p>Contact Us</p>
+                    <p>Support Forums</p>
+                    <p>API</p>
+                    <p>System Status</p>
+                </div>
+                <div class="part">
+                    <p class="head">GET INVOLVED</p>
+                    <p>Contribution Bible</p>
+                    <p>Add New Show</p>
+                    <p>Add New TV Show</p>
+                </div>
+                <div class="part">
+                    <p class="head">COMMUNITY</p>
+                    <p>Guidelines</p>
+                    <p>Discussions</p>
+                    <p>Leaderboard</p>
+                    <p>Twitter</p>
+                </div>
+                <div class="part">
+                    <p class="head">LEGAL</p>
+                    <p>Terms Of Use</p>
+                    <p>API Terms Of Use</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>

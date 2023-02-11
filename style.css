@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+QLD+Beginner&family=Itim&family=Lobster&family=Oswald:wght@300&family=Poor+Story&family=Poppins&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+QLD+Beginner&family=Itim&family=Lobster&family=Oswald:wght@300&family=Poor+Story&family=Poppins&family=Source+Sans+Pro&family=Square+Peg&display=swap');
+:root{
+    --tmdbLightergreen: rgb(192, 254, 207);
+    --tmdbLightgreen: rgb(30, 213, 169);
+    --tmdbLogoOrange: rgb(253, 193, 112);
+    --tmdbLogoRed: rgb(217, 59, 99);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+}
+.menu{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    justify-content: left;
+    gap: 40px;
+    padding-left: 50px;
+    padding-top: 22px;
+    list-style: none;
+    background: #032541;
+}
+.menu li a{
+    font-family: 'Itim' , cursive;
+    color: white;
+    text-decoration: none;
+}
+.menu2{
+    padding-left: 450px;
+}
+.logo{
+    width: 154px;
+    height: 20px;
+}
+.fa-square-plus{
+    width: 18px;
+    height: 20px;
+}
+.lang-btn{
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px;
+}
+.lang-btn:hover{
+    background: white;
+    color: #032541;
+}
+sup{
+    background: red;
+    color: white;
+    padding: 3px 6px;
+    border-radius: 50%;
+}
+.profile{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-top: -5px;
+}
+.fa-magnifying-glass{
+    color: aqua;
+}
+.box1{
+    background: url(header-bg1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 340px;
+}
+.box2{
+    background: url(header-bg2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 340px;
+}
+.box1 h1{
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 40px 0px 0px 40px;
+    font-family: 'Source Sans Pro' , sans-serif;
+
+}
+.box1 h2{
+    color: white;
+    font-size: 32px;
+    font-family: 'Source Sans Pro' , sans-serif;
+    padding-left: 40px;
+}
+.inp{
+    width: calc(100% - 80px);
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.search-btn{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    font-family: 'Source Sans Pro' , sans-serif;
+    background: rgb(1, 200, 200);
+    color: white;
+    margin-left: -104px;
+}
+.search-btn:hover{
+    color: black;
+    cursor: pointer;
+}
+::-webkit-input-placeholder{
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro' , sans-serif;
+    color: grey;
+}
+.box1{
+    padding-top: 50px;
+}
+.movies{
+    background: #fff;
+    margin-top: 20px;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    /* gap: 10px; */
+    /* pointer-events: none; */
+}
+.movies li a{
+    color: black;
+}
+.movies li{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    border-radius: 5px;
+}
+.movies li:hover{
+    background-color: rgba(128, 128, 128, 0.096);
+}
+.dropdown-menu:focus + .movies{
+    opacity: 1;
+}
+.people{
+    width: 120px;
+    height: 30px;
+}
+.wrap{
+    color: #fff;
+    font-size: 50px;
+    padding: 40px 0 0 40px;
+}
+.movies-list{
+    display: flex;
+    margin-top: 30px;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    height: 370px;
+    background: url(../TMDB/trending.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+.movie_photo{
+    width: 150px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.trends , .populars , .popularss{
+    margin-left: 30px;
+    display: flex;
+    margin-top: 20px;
+}
+.trend{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 200px;
+    border-radius: 30px;
+    height: 30px;   
+    margin-left: 30px; 
+    color: rgb(173, 216, 230);
+}
+.today , .week , .tv , .theatres{
+    color: transparent;
+    background: linear-gradient(to right, #c0fecf 0%, #1ed5a9 100%);
+
+    position: relative;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    align-items: center;
+    cursor: pointer;
+}
+.slide , #slide{
+    margin-left: -200px;
+    width: 100px;
+    height: 30px;
+    background: #032541;
+    border-radius: 30px;
+}
+.movie_name{
+    color: black;
+    font-weight: 700;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.release_date{
+    font-weight: 400;
+    color: grey;
+    margin-top: 5px;
+}
+::-webkit-scrollbar{
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 6px;
+    background: lightgray;
+}
+.section{
+    background: url(header-bg1.jpg);
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+}
+section{
+    margin-top: 30px;
+}
+.trailer-photo{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    position: relative;
+    transition: 1s;
+}
+.trailer-photo:hover{
+    transform: scale(1.05);
+    transition: 1s;
+}
+.trailer-list{
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: 20px;
+    margin-left: 30px;
+    gap: 20px;
+    width: 100%;
+    height: 310px;
+    
+}
+.trailer-name{
+    margin-top: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+}
+.foot{
+    width: 100%;
+    height: 330px;
+    background: #032541;
+    margin-top: 50px;
+}
+.foot-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 340px;
+    gap: 40px;
+}
+.account{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 70px;
+}
+.logo2{
+    width: 130px;
+    height: 94px;
+    margin-left: 150px;
+    margin-top: -140px;
+}
+.mail{
+    width: 276px;
+    height: 43px;
+    background: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 120px;
+    position: absolute;
+}
+.part{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 8px;
+    font-weight: 500;
+}
+.part p{
+    font-family: 'Source Sans Pro' , cursive;
+
+}
+.head{
+    font-size: 20px;
+    font-weight: 600;
+}
+.partt{
+    display: flex;
+    gap: 40px;
+}
+.leader{
+    display: flex;
+    margin-left: 40px;
+}
+.dot{
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: -15px;
+}
+.edits{
+    margin-left: 30px;
+    margin-top: -5px;
+}
+.dot1{
+    background: linear-gradient(to right, var(--tmdbLightergreen) 0% , var(--tmdbLightgreen) 100%);
+}
+.dot2{
+    background: linear-gradient(to right, var(--tmdbLogoOrange) 0% , var(--tmdbLogoRed) 100%);
+}
+.all_time, .this_week{
+    font-size: 15px;
+    font-family: 'Source Sans Pro' , sans-serif;
+}
+
