@@ -34,6 +34,7 @@ function display(array){
     `
     <div class="movie">
         <img class="movie_photo" src="${imgUrl+element.poster_path}" alt="">
+        <div class="vote">${Math.floor(element.vote_average*10)}%</div>
         <p class="movie_name">${element.name}</p>
         <p class="movie_name release_date">${element.first_air_date}</p>
     </div>
@@ -45,6 +46,7 @@ function display(array){
     `
     <div class="movie">
         <img class="movie_photo" src="${imgUrl+element.poster_path}" alt="">
+        <div class="vote">${Math.floor(element.vote_average*10)}%</div>
         <p class="movie_name">${element.title}</p>
         <p class="movie_name release_date">${element.release_date}</p>
     </div>
@@ -63,6 +65,7 @@ function displayy(array){
     `
     <div class="movie">
         <img class="movie_photo" src="${imgUrl+element.poster_path}" alt="">
+        <div class="vote">${Math.floor(element.vote_average*10)}%</div>
         <p class="movie_name">${element.name}</p>
         <p class="movie_name release_date">${element.first_air_date}</p>
     </div>
@@ -74,6 +77,7 @@ function displayy(array){
     `
     <div class="movie">
         <img class="movie_photo" src="${imgUrl+element.poster_path}" alt="">
+        <div class="vote">${Math.floor(element.vote_average*10)}%</div>
         <p class="movie_name">${element.title}</p>
         <p class="movie_name release_date">${element.release_date}</p>
     </div>
